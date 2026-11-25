@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Usuário - ADR Motors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">ADR.motors</div>
+        <nav>
+            <ul>
+                <li><a href="../index/index.html">Início</a></li>
+                <li><a href="../produto/produto.html">Ofertas</a></li>
+                <li><a href="../new/new.html">Cadastro</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <a href="../login/login.html" class="btn-login">Login</a>
+    </header>
+
+    <main>
+        <h1>👤+ Novo Usuário</h1>
+        <form action="../login/login.html" method="post" class="form-cadastro">
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="campo">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+
+            <fieldset>
+                <legend>Perfil de Acesso</legend>
+                <label><input type="radio" name="perfil" value="visitante" checked> Visitante</label>
+                <label><input type="radio" name="perfil" value="comprador"> Comprador / Cliente</label>
+                <label><input type="radio" name="perfil" value="consultor"> Consultor de Vendas</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências de categoria</legend>
+                <label><input type="checkbox" name="categoria" value="sedan-suv" checked> Sedans & SUVs</label>
+                <label><input type="checkbox" name="categoria" value="hatch-compacto"> Hatches & Compactos</label>
+                <label><input type="checkbox" name="categoria" value="todos"> Todas as categorias</label>
+            </fieldset>
+
+            <button type="submit">👤+ Criar conta</button>
+        </form>
+    </main>
+
+    <footer id="contato">
+        <div class="footer-brand">kmr motors</div>
+        <p>A ADR Motors é uma concessionária multimarcas que oferece os melhores veículos novos e seminovos para você.
+        </p>
+        <p>&copy; 2026 adr motors. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
